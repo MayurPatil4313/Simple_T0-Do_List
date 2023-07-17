@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Tektur:wght@500&display=swap"
+        rel="stylesheet">
+
+
+    <!--font awasam  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="tolist.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2 style="font-size: 50px;">To-Do List <img src="img/logo.png" alt="logo"></h2>
+            <div class="row">
+                <input type="text" id="txtItem" placeholder="Add your Text ">
+                <label for="priorities">Priorities:</label>
+                <select name="priorities" id="priorities">
+                    <option value="Urgency">Urgency</option>
+                    <option value="Impotent">Impotent</option>
+                    <option value="Less-impotent">Less Impotent</option>
+                </select>
+                <button type="button" onclick="savetask()">Add</button>
+            </div>
+
+            <ul class="task-box" id="my-TaskList">
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
